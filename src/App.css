@@ -1,38 +1,276 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "poppins", sans-serif;
+  background: #F5F5F5;
+  color: #121C33;
+  font-size: 16px;
+  word-wrap: break-word;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3, h4, h5, .form-label, .navbar-brand{
+  font-weight: 600 !important;
+  font-size: 23px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h6, p{
+  color: #121C33;
+  opacity: 0.6;
+}
+
+.row a.navbar-brand{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 72px;
+  letter-spacing: 1px;
+  color: #121C33 !important;
+}
+
+.loading-img{
+  height: 70vh;
   align-items: center;
+}
+
+.loading-img-box{
+    padding: 2rem;
+   background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+}
+
+.loading-img-box .mb-5 .planet-text-head{
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #121C33;
+  font-weight: 600;
+}
+
+.container{
+  position: relative;
+}
+
+.plus-button{
+  background: #121C33;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: absolute;
+    right: 20px;
+    bottom: 50px;
+  z-index: 1;
+  outline: 0;
+  border: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.plus-button img{
+  width: 20px;
+  background-color: #121C33;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.plus-button:hover{
+  cursor: pointer;
+}
+
+input[type="text"], textarea.form-control{
+  background-color: #F5F5F5;
+}
+
+.dark-btn{
+  background-color: #121C33 !important;
+}
+
+.PlanetFormEdit, .characterEdit{
+  display: none;
+}
+
+.PlanetForm, .characterForm{
+  z-index: 1;
+  margin: 0!important;
+  display: initial;
+  position: absolute;
+    top:50 ;
+    right: 0;
+    left: 0;
+  margin: 0 auto;
+  animation: planetFormAnimate 1s cubic-bezier(0.075, 0.82, 0.165, 1) backwards;
+  backdrop-filter: blur(2px);
+}
+
+@keyframes planetFormAnimate{
+  0%{
+    opacity: 0;
+    transform: translateY(-44px);
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    opacity: 1;
+    transform: translateY(44px);
   }
 }
+
+.side-bar{
+  width:30%;
+  position: absolute;
+    right: 10px;
+    top:0;
+  visibility: hidden;
+}
+
+.plus{
+  width: 15px;
+}
+
+.planetAlphaHead{
+  font-size: 20px;
+}
+
+.character-img-box{
+  display: flex;
+  justify-content: center;
+}
+
+.character-img-box img{
+  max-width: 80%;
+  border-radius: .5rem;
+}
+
+.badge{
+  color: #121C33 !important;
+  text-align: left !important;
+}
+
+.contain h5{
+  font-size: 18px !important;
+}
+
+.character-img{
+  height: 60px;
+  border-radius: .5rem;
+}
+
+.show-side{
+  animation: showSideAnimate 1s ease-in-out forwards;
+}
+
+@keyframes showSideAnimate{
+  0%{
+    transform: translateX(-44px);
+  }
+  100%{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(none);
+  }
+}
+
+.planet-card:hover{
+  cursor: pointer;
+}
+
+.input-group{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group .input-group-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #48545f;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    width: 35%;
+}
+
+.jane{
+  width: 30%;
+  display: inline;
+}
+
+.char-box{
+  height: fit-content;
+  border-radius: 1.5rem !important;
+  width: 17rem !important;
+}
+
+@media (max-width:1069px) {
+  .side-bar{
+    width: 60%;
+  }
+  .right-section{
+    display: none;
+  }
+  .left-section{
+    width: 100% !important;
+  }
+  .PlanetFormEdit .loading-img-box, .characterEdit .loading-img-box{
+    width: 97% !important;
+  }
+}
+
+@media (max-width:500px) {
+  body{
+    padding: .8rem;
+    font-size: 3px;
+  }
+  .row a.navbar-brand{
+    font-size: 34px;
+  }
+  h3, h4, h5, .form-label, .navbar-brand{
+    font-size: 13px;
+  }
+  .buttons .btn{
+    display: block;
+  }
+  .side-bar{
+    width: 100%;
+  }
+}
+
+@media(max-width:567px){
+  .planets-all-btn{
+    display: none !important;
+  }
+  .tabs-cont{
+    padding: 0 !important;
+  }
+}
+
+@media (max-width:768px) {
+  .input-group .input-group-text {
+      width: 65%;
+  }
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
