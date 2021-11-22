@@ -12,13 +12,14 @@ import EightImg from "./images/characters/character-2.png"
 function CharacterBox(props){
     return(
         <div>
-            <Row className='d-flex justify-content-center my-3'>
-                <Col sm={4} className="p-0 character-img-box"><img src={props.img} alt="character" className='h-100 '/></Col>
-                <Col sm={8} className="p-0">
-                    <h5>{props.name}</h5>
-                    <p className='mb-0'>Amet minim mollit non deserunt.</p>
-                </Col>
-            </Row>
+            <button type="button" class="btn mb-3 py-0 btn-sm d-flex align-items-center border border-light">
+                <img src={props.img} alt="character" className="character-img"/><span class="badge">
+                    <div class="contain">
+                        <h5>{props.name}</h5>
+                        <p className='mb-0'>Amet minim mollit non deserunt.</p>
+                    </div>
+                </span>
+            </button>
         </div>
     )
 }

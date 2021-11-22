@@ -127,6 +127,13 @@ input[type="text"], textarea.form-control{
     top:0;
   visibility: hidden;
 }
+.CharSideBar{
+   position: absolute;
+    right: 10px;
+    top:0;
+   width:30%;
+   visibility: hidden;
+}
 
 .plus{
   width: 15px;
@@ -213,15 +220,13 @@ input[type="text"], textarea.form-control{
   width: 17rem !important;
 }
 
+.char-box:hover{
+  cursor: pointer;
+}
+
 @media (max-width:1069px) {
-  .side-bar{
+  .side-bar, .CharSideBar{
     width: 60%;
-  }
-  .right-section{
-    display: none;
-  }
-  .left-section{
-    width: 100% !important;
   }
   .PlanetFormEdit .loading-img-box, .characterEdit .loading-img-box{
     width: 97% !important;
@@ -234,7 +239,7 @@ input[type="text"], textarea.form-control{
     font-size: 3px;
   }
   .row a.navbar-brand{
-    font-size: 34px;
+    font-size: 25px;
   }
   h3, h4, h5, .form-label, .navbar-brand{
     font-size: 13px;
@@ -242,7 +247,7 @@ input[type="text"], textarea.form-control{
   .buttons .btn{
     display: block;
   }
-  .side-bar{
+  .side-bar, .CharSideBar{
     width: 100%;
   }
 }
