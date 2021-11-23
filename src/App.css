@@ -220,6 +220,14 @@ input[type="text"], textarea.form-control{
   width: 17rem !important;
 }
 
+.char-box h5{
+  font-size: 15px;
+}
+
+.CharSideBar .row a.navbar-brand{
+  font-size: 26px;
+}
+
 .char-box:hover{
   cursor: pointer;
 }
