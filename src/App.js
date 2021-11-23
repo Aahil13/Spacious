@@ -1,6 +1,6 @@
 import './App.css';
 /*eslint no-useless-escape: "error"*/
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 import Home from './component/Home';
 import { Switch } from 'react-router';
 import Planets from './component/Planets.jsx';
