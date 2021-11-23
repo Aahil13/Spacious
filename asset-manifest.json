@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/Spacious/static/css/main.983c0e6b.chunk.css",
-    "main.js": "/Spacious/static/js/main.f62d9f0c.chunk.js",
-    "main.js.map": "/Spacious/static/js/main.f62d9f0c.chunk.js.map",
+    "main.css": "/Spacious/static/css/main.eb173abc.chunk.css",
+    "main.js": "/Spacious/static/js/main.3277a999.chunk.js",
+    "main.js.map": "/Spacious/static/js/main.3277a999.chunk.js.map",
     "runtime-main.js": "/Spacious/static/js/runtime-main.5aa8b6e7.js",
     "runtime-main.js.map": "/Spacious/static/js/runtime-main.5aa8b6e7.js.map",
     "static/css/2.383c0125.chunk.css": "/Spacious/static/css/2.383c0125.chunk.css",
-    "static/js/2.0502d7f9.chunk.js": "/Spacious/static/js/2.0502d7f9.chunk.js",
-    "static/js/2.0502d7f9.chunk.js.map": "/Spacious/static/js/2.0502d7f9.chunk.js.map",
+    "static/js/2.1ad1ad69.chunk.js": "/Spacious/static/js/2.1ad1ad69.chunk.js",
+    "static/js/2.1ad1ad69.chunk.js.map": "/Spacious/static/js/2.1ad1ad69.chunk.js.map",
     "index.html": "/Spacious/index.html",
     "static/css/2.383c0125.chunk.css.map": "/Spacious/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.983c0e6b.chunk.css.map": "/Spacious/static/css/main.983c0e6b.chunk.css.map",
-    "static/js/2.0502d7f9.chunk.js.LICENSE.txt": "/Spacious/static/js/2.0502d7f9.chunk.js.LICENSE.txt",
+    "static/css/main.eb173abc.chunk.css.map": "/Spacious/static/css/main.eb173abc.chunk.css.map",
+    "static/js/2.1ad1ad69.chunk.js.LICENSE.txt": "/Spacious/static/js/2.1ad1ad69.chunk.js.LICENSE.txt",
     "static/media/character-1.b8cf9c50.png": "/Spacious/static/media/character-1.b8cf9c50.png",
     "static/media/character-10.f6fdbe59.png": "/Spacious/static/media/character-10.f6fdbe59.png",
     "static/media/character-11.436dd33b.png": "/Spacious/static/media/character-11.436dd33b.png",
     "static/media/character-12.93868536.png": "/Spacious/static/media/character-12.93868536.png",
     "static/media/character-13.323d7c56.png": "/Spacious/static/media/character-13.323d7c56.png",
+    "static/media/character-14.e769e338.png": "/Spacious/static/media/character-14.e769e338.png",
+    "static/media/character-15.6290ce78.png": "/Spacious/static/media/character-15.6290ce78.png",
     "static/media/character-16.68426aac.png": "/Spacious/static/media/character-16.68426aac.png",
     "static/media/character-2.6859fefd.png": "/Spacious/static/media/character-2.6859fefd.png",
     "static/media/character-3.a7f4a59a.png": "/Spacious/static/media/character-3.a7f4a59a.png",
@@ -40,8 +42,8 @@
   "entrypoints": [
     "static/js/runtime-main.5aa8b6e7.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.0502d7f9.chunk.js",
-    "static/css/main.983c0e6b.chunk.css",
-    "static/js/main.f62d9f0c.chunk.js"
+    "static/js/2.1ad1ad69.chunk.js",
+    "static/css/main.eb173abc.chunk.css",
+    "static/js/main.3277a999.chunk.js"
   ]
 }
