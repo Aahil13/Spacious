@@ -1,6 +1,6 @@
 import './App.css';
 /*eslint no-useless-escape: "error"*/
-import { Router, Route } from 'react-router-dom';
+import {  Route } from 'react-router-dom';
 import Home from './component/Home';
 import { Switch } from 'react-router';
 import Planets from './component/Planets.jsx';
@@ -8,8 +8,7 @@ import Characters from './component/Characters';
 
 function App()  {
   return (
-    <Router>
-        <Switch>
+    <Switch>
           <div className="App">
             <Route exact path="/" >
               <Home/>
@@ -22,7 +21,6 @@ function App()  {
             </Route>
           </div>
       </Switch>
-    </Router>
   );
 }
 
