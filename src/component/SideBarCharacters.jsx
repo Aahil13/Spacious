@@ -10,7 +10,7 @@ import SixthImg from "./images/characters/character-6.png"
 function CharacterBox(props){
     return(
         <div>
-            <button type="button" class="btn mb-3 py-0 btn-sm d-flex align-items-center border border-light">
+            <button type="button" class="btn mb-3 py-0 btn-sm d-flex align-items-center">
                 <img src={props.img} alt="character" className="character-img"/><span class="badge">
                     <div class="contain">
                         <h5>{props.name}</h5>

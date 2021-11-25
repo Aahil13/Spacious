@@ -12,6 +12,7 @@ body{
   font-size: 16px;
   word-wrap: break-word;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h3, h4, h5, .form-label, .navbar-brand{
@@ -261,17 +262,16 @@ h5.charhead{
   }
   .side-bar, .CharSideBar{
     width: 100%;
-    position: fixed;
+    position: absolute;
     right: 10px;
     top:0
   }
   .PlanetForm, .characterForm{
-    position: fixed;
+    position: absolute;
       top:0;
       right: 0;
       left: 0;
     z-index: 30;
-    overflow-y: scroll;
   }
 
   .char-box{
