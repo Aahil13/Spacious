@@ -221,15 +221,19 @@ input[type="text"], textarea.form-control{
 }
 
 .char-box h5{
-  font-size: 15px;
+  font-size: 24px;
 }
 
 .CharSideBar .row a.navbar-brand{
-  font-size: 26px;
+  font-size: 28px;
 }
 
 .char-box:hover{
   cursor: pointer;
+}
+
+h5.charhead{
+    color: #121C33 !important;
 }
 
 @media (max-width:1069px) {
@@ -244,20 +248,36 @@ input[type="text"], textarea.form-control{
 @media (max-width:500px) {
   body{
     padding: .8rem;
-    font-size: 3px;
+    font-size: 14px;
   }
   .row a.navbar-brand{
-    font-size: 25px;
+    font-size: 30px;
   }
   h3, h4, h5, .form-label, .navbar-brand{
-    font-size: 13px;
+    font-size: 14px;
   }
   .buttons .btn{
     display: block;
   }
   .side-bar, .CharSideBar{
     width: 100%;
+    position: fixed;
+    right: 10px;
+    top:0
   }
+  .PlanetForm, .characterForm{
+    position: fixed;
+      top:0;
+      right: 0;
+      left: 0;
+    z-index: 30;
+    overflow-y: scroll;
+  }
+
+  .char-box{
+    width: 90% !important;
+  }
+  
 }
 
 @media(max-width:567px){
